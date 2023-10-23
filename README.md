@@ -11,8 +11,8 @@ EF Sat2Rad is a modified version of the [Earthformer](https://github.com/amazon-
 Installation and setting up the data involves a couple of steps:
 
 ### 0) Requirements and Versions
-- CUDA: If you'd like to use GPU. CUDA 11.6 was available in the machines we ran the experiments with. 
-- AWS CLI: If you'd like to download data from SEVIR repositories.
+- CUDA: To use GPU. CUDA 11.6 was available in the machines we ran the experiments with. 
+- AWS CLI: To download data from SEVIR buckets comfortably.
 
 ### 1) Clone the repository and jump into the main directory
 ```bash
@@ -29,7 +29,7 @@ conda activate ef_sat2rad
 ```
 
 ### 3) Download and preprocess the data:
-- It is possible to use sample data provided in [Zenodo](https://doi.org/10.5281/zenodo.10033640), just unzip the archive and copy the content to `data/train` and `data/test`.
+- It is possible to use sample data provided in [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10033640), just unzip the archive and copy the content to `data/train` and `data/test`.
 
 - For the full dataset, follow the steps below:
 ```bash
@@ -49,7 +49,7 @@ python ef-sat2rad/Preprocess/save_oneByOne.py -dirBase bulk_data/ -dirOut data/ 
 ```
 
 ## Running the model
-In order to run the trained model right away, download the pretrained weights provided in [Zenodo](https://doi.org/10.5281/zenodo.10033640) and copy the unzipped file `ef_sevir_sat2rad.pt` into `trained_ckpt`. 
+In order to run the trained model right away, download the pretrained weights provided in [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10033640) and copy the unzipped file `ef_sevir_sat2rad.pt` into `trained_ckpt`. 
 
 Afterwards run the chunk below and it'll make prediction on the test samples available in `data/test`:
 ```bash
@@ -73,7 +73,7 @@ This repository is built on top of the great repositories:
 ## Cite
 Please cite us if this repo helps your work!
 ```
-BiB entry will be provided here!
+Bib entry will be provided here!
 ``` 
 
 ## Licence
