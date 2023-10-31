@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Earthformer for satellite-to-radar nowcasting (EF Sat2Rad) repository, which is accompanying the paper [Transformer-based nowcasting of radar composites from satellite images for severe weather](LINK_WILL_BE_AVAILABLE_SOON)
+Welcome to the Earthformer for satellite-to-radar nowcasting (EF Sat2Rad) repository, which is accompanying the paper [Transformer-based nowcasting of radar composites from satellite images for severe weather](https://doi.org/10.48550/arXiv.2310.19515)
 
 EF Sat2Rad is a modified version of the [Earthformer](https://github.com/amazon-science/earth-forecasting-transformer) package, tailored for radar nowcasting from satellite data by using [SEVIR](https://github.com/MIT-AI-Accelerator/neurips-2020-sevir) dataset. 
 
@@ -73,7 +73,13 @@ This repository is built on top of the great repositories:
 ## Cite
 Please cite us if this repo helps your work!
 ```
-Bib entry will be provided here!
+@article{Kucuk2023,
+   title = {Transformer-based nowcasting of radar composites from satellite images for severe weather},
+   author = {K\"u\c{c}\"uk, {\c{C}}a\u{g}lar and Giannakos, Apostolos and Schneider, Stefan and Jann, Alexander},
+   month = {10},
+   doi = {10.48550/arXiv.2310.19515},
+   year = {2023},
+}
 ``` 
 
 ## Licence
