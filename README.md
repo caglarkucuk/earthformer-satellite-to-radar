@@ -63,7 +63,7 @@ In order to train the model from scratch, run:
 cd ef-sat2rad
 python train_cuboid_sevir_invLinear.py
 ```
-to train the model with default parameters and original structure described in the [paper](PAPER_URL). Alternating model structure by creating new config files is the best way to experiment further.
+to train the model with default parameters and original structure described in the [paper](https://arxiv.org/abs/2310.19515). Alternating model structure by creating new config files is the best way to experiment further.
 
 ## Credits
 This repository is built on top of the great repositories:
