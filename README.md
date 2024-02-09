@@ -58,6 +58,8 @@ python train_cuboid_sevir_invLinear.py --pretrained
 ```
 It is possible to use the model for inference on machines without a GPU. It takes ~2 seconds to predict one sample on a CPU with 32 threads! Though, it is not advised to train the model without an accelarator, e.g., GPU.
 
+* To make model predictions for larger spatial domains, it is necessary to adjust the input data to match the shape of SEVIR input data. Subsequently, the model outputs, which will conform to the shape of VIL events in the SEVIR dataset, should be mosaicked (reassembled) back into the original shape of the studied large domain.
+
 In order to train the model from scratch, run:
 ```bash
 cd ef-sat2rad
