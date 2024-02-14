@@ -93,9 +93,9 @@ class kucukSevirDataModule(pl.LightningDataModule):
         self.testFiles = glob.glob(data_dir+'test/*')
 
         self.trainFiles = trainFilesTotal[:8192] # divides by 32 w/o remainder.... 8566 is total number of files!
-        self.trainFiles = trainFilesTotal[2:770] # ##### FATAL!!!
-        # self.valFiles = trainFilesTotal[8192:]
-        self.valFiles = trainFilesTotal[-2:] ##### FATAL!!!!
+        self.valFiles = trainFilesTotal[8192:]
+        # self.trainFiles = trainFilesTotal[2:770] # ##### FATAL!!! Use only for dirty systemcheck
+        # self.valFiles = trainFilesTotal[-2:] ##### FATAL!!!!
 
     def setup(self, stage=None):
         if stage == 'train' or stage is None:
